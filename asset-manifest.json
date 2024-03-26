@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.023adf2d.css",
+    "main.js": "/static/js/main.73f46b08.js",
+    "static/media/About-me.jpg": "/static/media/About-me.bd7a5c1fd40caeb2c21c.jpg",
+    "static/media/Profile.jpeg": "/static/media/Profile.1eb10c11a12e78dd2d80.jpeg",
+    "static/media/portfolio2.jpg": "/static/media/portfolio2.22bf919c98b63be65ec1.jpg",
+    "static/media/portfolio3.jpg": "/static/media/portfolio3.00dbc077895069c87dd3.jpg",
+    "static/media/portfolio6.jpg": "/static/media/portfolio6.05be46580d1469f90bae.jpg",
+    "static/media/portfolio1.jpg": "/static/media/portfolio1.ddd6887a649320c0150c.jpg",
+    "static/media/AbbasVaziri_Resume.docx": "/static/media/AbbasVaziri_Resume.65eecd85224daf8aa0b9.docx",
+    "static/media/portfolio5.png": "/static/media/portfolio5.cfc2403d3c403771cf19.png",
+    "static/media/portfolio4.jpg": "/static/media/portfolio4.4407130d163519a79cd8.jpg",
+    "index.html": "/index.html",
+    "main.023adf2d.css.map": "/static/css/main.023adf2d.css.map",
+    "main.73f46b08.js.map": "/static/js/main.73f46b08.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.023adf2d.css",
+    "static/js/main.73f46b08.js"
+  ]
+}
