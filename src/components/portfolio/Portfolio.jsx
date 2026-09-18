@@ -1,5 +1,5 @@
 import "./portfolio.css";
-import LIGHTHOUSE from "../../assets/lighthouse-project.png";
+import LIGHTHOUSE from "../../assets/lighthouse-real-hero.jpg";
 import CODELANCE from "../../assets/codelance-feature.png";
 import BLOGCMS from "../../assets/blogcms-thumb.svg";
 import EXPENSE from "../../assets/portfolio1.jpg";
@@ -28,6 +28,7 @@ const data = [
   {
     id: 3,
     image: EXPENSE,
+    imageClass: "portfolio__item-image--contain",
     title: "Expense Tracker — GraphQL",
     description:
       "A MERN expense tracker built with Apollo GraphQL, authentication, mutations, relational data, and deployment on Render.",
@@ -62,12 +63,12 @@ const Portfolio = () => {
       <h2>Featured Projects</h2>
 
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, description, stack, github, demo, featured }) => (
+        {data.map(({ id, image, imageClass = "", title, description, stack, github, demo, featured }) => (
           <article
             key={id}
             className={`portfolio__item ${featured ? "portfolio__item--featured" : ""}`}
           >
-            <div className="portfolio__item-image">
+            <div className={`portfolio__item-image ${imageClass}`}>
               <img src={image} alt={title} />
             </div>
 
