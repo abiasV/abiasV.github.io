@@ -1,46 +1,64 @@
 import "./about.css";
 import ME from "../../assets/About-me.jpg";
-import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
-import { VscFolderLibrary } from "react-icons/vsc";
+import { FaAward, FaGraduationCap } from "react-icons/fa";
+import { VscRocket } from "react-icons/vsc";
 
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
+      <h5>Get to know me</h5>
       <h2>About Me</h2>
 
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About-me" />
+            <img src={ME} alt="Abbas Vaziri" />
           </div>
         </div>
+
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>4+ Years Working</small>
+              <small>4+ years in web development</small>
             </article>
+
             <article className="about__card">
-              <FiUsers className="about__icon" />
-              <h5>Clients</h5>
-              <small>56 Worldwide</small>
+              <FaGraduationCap className="about__icon" />
+              <h5>Education</h5>
+              <small>Humber + Software Engineering</small>
             </article>
+
             <article className="about__card">
-              <VscFolderLibrary className="about__icon" />
-              <h5>Projects</h5>
-              <small>11 Completed</small>
+              <VscRocket className="about__icon" />
+              <h5>Current Build</h5>
+              <small>Lighthouse Agent</small>
             </article>
           </div>
-          <h3 className="about-text">
-            Full stack developer with a computer engineering background and over 4 years of experience. Recently completed a Post-Graduate Certificate in Web Development at Humber College. Proficient in JavaScript, MERN stack, PHP, REST and GraphQL API, and advanced front-end and back-end technologies. Developed 5+ scalable, secure applications with a focus on optimal user experience.
-            <br /> <br />
-            Please take a look at one of my projects, <a href="https://github.com/abiasV/CodeLance">CodeLance</a>
-          </h3>
+
+          <div className="about-text">
+            <p>
+              I'm a full-stack web developer in Toronto with professional
+              experience across React, Node.js, WordPress, and modern web
+              development. I enjoy building applications that are useful,
+              maintainable, and easy to understand.
+            </p>
+            <p>
+              I completed a Postgraduate Certificate in Web Development at
+              Humber College and hold a Bachelor's degree in Computer Software
+              Engineering from Azad University, evaluated by WES for Canadian
+              equivalency.
+            </p>
+            <p>
+              My current focus is Lighthouse Agent, where I'm applying
+              full-stack engineering, AI workflows, API integration, deployment,
+              and real-user validation to a practical product.
+            </p>
+          </div>
+
           <a href="#contact" className="btn btn-primary">
-            Lets' Talk
+            Let's Talk
           </a>
         </div>
       </div>
