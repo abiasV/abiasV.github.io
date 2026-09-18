@@ -1,6 +1,6 @@
 import "./portfolio.css";
 import LIGHTHOUSE from "../../assets/lighthouse-project.png";
-import CODELANCE from "../../assets/codelance-project.png";
+import CODELANCE from "../../assets/codelance-feature.png";
 import BLOGCMS from "../../assets/blogcms-thumb.svg";
 import EXPENSE from "../../assets/portfolio1.jpg";
 import RICKMORTY from "../../assets/portfolio4.jpg";
