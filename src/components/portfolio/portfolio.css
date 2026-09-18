@@ -34,8 +34,9 @@
 }
 
 .portfolio__item--featured .portfolio__item-image {
-  aspect-ratio: auto;
-  min-height: 320px;
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+  align-self: center;
 }
 
 .portfolio__item-image img {
@@ -44,6 +45,15 @@
   min-height: 0;
   object-fit: cover;
   object-position: top center;
+}
+
+.portfolio__item-image--contain {
+  background: #0d1117;
+}
+
+.portfolio__item-image--contain img {
+  object-fit: contain;
+  object-position: center;
 }
 
 .portfolio__body {
@@ -103,11 +113,6 @@
 
   .portfolio__item--featured {
     grid-column: auto;
-  }
-
-  .portfolio__item--featured .portfolio__item-image {
-    aspect-ratio: 16 / 9;
-    min-height: 0;
   }
 }
 
