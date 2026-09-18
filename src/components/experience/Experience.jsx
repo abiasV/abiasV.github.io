@@ -4,15 +4,40 @@ import { BsPatchCheckFill } from "react-icons/bs";
 const groups = [
   {
     title: "Frontend",
-    skills: ["React", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS", "React Query"],
+    skills: [
+      "React.js",
+      "Next.js",
+      "JavaScript",
+      "Redux Toolkit",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+    ],
   },
   {
-    title: "Backend & APIs",
-    skills: ["Node.js", "Express.js", "PHP", "Laravel", "REST APIs", "GraphQL"],
+    title: "Backend & Data",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "PHP / Laravel",
+      "REST APIs",
+      "GraphQL",
+      "MongoDB",
+      "MySQL",
+    ],
   },
   {
-    title: "Data & Tools",
-    skills: ["MongoDB", "MySQL", "Git", "GitHub", "AWS", "WordPress"],
+    title: "Testing & Delivery",
+    skills: [
+      "Vitest",
+      "Jest",
+      "React Testing Library",
+      "TDD",
+      "Git",
+      "Docker",
+      "CI/CD",
+      "Agile / Scrum",
+    ],
   },
 ];
 
