@@ -1,31 +1,38 @@
 import "./footer.css";
-import { FaFacebookF } from "react-icons/fa";
-import { FiInstagram } from "react-icons/fi";
-import { IoLogoTwitter } from "react-icons/io";
+import { FaGithub } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs";
+import { MdOutlineEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
     <footer>
-      <a href="/#" className="footer__logo">
+      <a href="#home" className="footer__logo">
         Abbas Vaziri
       </a>
 
       <ul className="permalinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#work">Experience</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#skills">Tech Stack</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
       <div className="footer__socials">
-        <a href="https://facebook.com/abbas.vaziri"><FaFacebookF /></a>
-        <a href="https://instagram.com/abbasvaziri/"><FiInstagram /></a>
-        <a href="https://twitter.com"><IoLogoTwitter /></a>
+        <a href="https://github.com/abiasV" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <FaGithub />
+        </a>
+        <a href="https://www.linkedin.com/in/abbasvaziri/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <BsLinkedin />
+        </a>
+        <a href="mailto:vaziri.as@gmail.com" aria-label="Email">
+          <MdOutlineEmail />
+        </a>
       </div>
+
       <div className="footer__copyright">
-        <small>&copy; Abbas Vaziri. All rights reserved.</small>
+        <small>&copy; {new Date().getFullYear()} Abbas Vaziri. All rights reserved.</small>
       </div>
     </footer>
   );
