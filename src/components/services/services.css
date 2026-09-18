@@ -1,71 +1,73 @@
 .services__container {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
 }
 
 .service {
-	background: var(--color-bg-variant);
-	border-radius: 0 0 2rem 2rem;
-	border: 1px solid var(--color-primary);
-	height: fit-content;
-	transition: var(--transition);
+  background: var(--color-surface);
+  border-radius: 1.25rem;
+  border: 1px solid var(--color-border);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  overflow: hidden;
 }
 
 .service:hover {
-	background: transparent;
-	border-color: var(--color-primary-variant);
-	cursor: default;
+  transform: translateY(-4px);
+  border-color: var(--color-primary-variant);
 }
 
 .service__head {
-	background: var(--color-primary);
-	padding: 2rem;
-	border-radius: 0 0 2rem 2rem;
-	box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+  background: rgba(88, 166, 255, 0.1);
+  padding: 1.35rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  min-height: 84px;
+  display: grid;
+  place-items: center;
 }
 
 .service__head h3 {
-	text-align: center;
-	font-size: 1rem;
-	color: var(--color-bg);
+  text-align: center;
+  font-size: 1rem;
+  color: var(--color-primary);
 }
 
 .service__list {
-	padding: 2rem;
+  padding: 1.5rem;
+  flex: 1;
 }
 
 .service__list li {
-	display: flex;
-	gap: 1rem;
-	margin-bottom: 0.8rem;
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 0.85rem;
+  align-items: flex-start;
 }
 
 .service__list-icon {
-	color: var(--color-primary);
-	margin-top: 2px;
-	color: red;
+  color: var(--color-primary);
+  margin-top: 4px;
+  flex-shrink: 0;
 }
 
 .service__list p {
-	font-size: 0.9rem;
+  font-size: 0.88rem;
+  color: var(--color-light);
+  line-height: 1.6;
 }
 
-/* ============ MEDIA QUERIES (MEDIUM DEVICES) ================ */
 @media screen and (max-width: 1024px) {
-	.services__container {
-		grid-template-columns: 1fr 1fr;
-		gap: 2rem;
-	}
-	.service {
-		height: auto;
-	}
+  .services__container {
+    grid-template-columns: 1fr;
+  }
 }
 
-/* ============ MEDIA QUERIES (SMALL DEVICES) ================ */
 @media screen and (max-width: 600px) {
-	.services__container {
-		grid-template-columns: 1fr;
-		gap: 1.5rem;
-	}
+  .services__container {
+    gap: 1rem;
+  }
 }
