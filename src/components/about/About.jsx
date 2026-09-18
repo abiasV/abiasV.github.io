@@ -21,7 +21,7 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>4+ years in web development</small>
+              <small>Professional web development since 2020</small>
             </article>
 
             <article className="about__card">
@@ -39,10 +39,9 @@ const About = () => {
 
           <div className="about-text">
             <p>
-              I'm a full-stack web developer in Toronto with professional
-              experience across React, Node.js, WordPress, and modern web
-              development. I enjoy building applications that are useful,
-              maintainable, and easy to understand.
+              I'm a Toronto-based frontend and full-stack developer with
+              professional experience building user-focused web applications
+              with React, Next.js, Node.js, REST APIs, and modern JavaScript.
             </p>
             <p>
               I completed a Postgraduate Certificate in Web Development at
