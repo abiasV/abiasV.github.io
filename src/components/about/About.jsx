@@ -39,9 +39,9 @@ const About = () => {
 
           <div className="about-text">
             <p>
-              I'm a Toronto-based frontend and full-stack developer with
-              professional experience building user-focused web applications
-              with React, Next.js, Node.js, REST APIs, and modern JavaScript.
+              I'm a Toronto-based full-stack developer with a strong frontend focus,
+              building user-focused web applications with React, Next.js,
+              Node.js, REST APIs, and modern JavaScript.
             </p>
             <p>
               I completed a Postgraduate Certificate in Web Development at
