@@ -1,15 +1,14 @@
 import "./portfolio.css";
-import IMG1 from "../../assets/portfolio1.jpg";
-import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
-import IMG4 from "../../assets/portfolio4.jpg";
-import IMG5 from "../../assets/portfolio5.jpg";
-import IMG6 from "../../assets/portfolio6.jpg";
+import LIGHTHOUSE from "../../assets/lighthouse-thumb.svg";
+import CODELANCE from "../../assets/codelance-thumb.svg";
+import BLOGCMS from "../../assets/blogcms-thumb.svg";
+import EXPENSE from "../../assets/portfolio1.jpg";
+import RICKMORTY from "../../assets/portfolio4.jpg";
 
 const data = [
   {
     id: 1,
-    image: IMG1,
+    image: LIGHTHOUSE,
     title: "Lighthouse Agent",
     description:
       "A full-stack AI product for Etsy sellers that turns shop signals into prioritized growth actions with approval, verification, and outcome tracking.",
@@ -19,7 +18,7 @@ const data = [
   },
   {
     id: 2,
-    image: IMG2,
+    image: CODELANCE,
     title: "CodeLance — Full-Stack Freelancing Platform",
     description:
       "A MERN capstone with employer, freelancer, and admin roles, OTP authentication, proposals, dashboards, and role-based workflows.",
@@ -28,7 +27,7 @@ const data = [
   },
   {
     id: 3,
-    image: IMG3,
+    image: EXPENSE,
     title: "Expense Tracker — GraphQL",
     description:
       "A MERN expense tracker built with Apollo GraphQL, authentication, mutations, relational data, and deployment on Render.",
@@ -38,7 +37,7 @@ const data = [
   },
   {
     id: 4,
-    image: IMG4,
+    image: BLOGCMS,
     title: "Blog CMS",
     description:
       "A role-based blog administration system for managing content, users, permissions, and CRUD workflows.",
@@ -47,21 +46,12 @@ const data = [
   },
   {
     id: 5,
-    image: IMG5,
+    image: RICKMORTY,
     title: "Rick and Morty SPA",
     description:
       "A React single-page application focused on API integration, async data fetching, responsive UI, and reusable components.",
     stack: ["React", "Vite", "REST API", "CSS"],
     github: "https://github.com/abiasV/Rick-and-Morty",
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: "Travel CRUD Application",
-    description:
-      "A Node.js, Express, and MongoDB application demonstrating server-side CRUD operations and database integration.",
-    stack: ["Node.js", "Express", "MongoDB"],
-    github: "https://github.com/abiasV/Node.js-Express-app",
   },
 ];
 
