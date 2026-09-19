@@ -47,11 +47,14 @@
   object-position: top center;
 }
 
-.portfolio__item-image--contain {
+.portfolio__item-image--natural {
+  aspect-ratio: auto;
   background: #0d1117;
 }
 
-.portfolio__item-image--contain img {
+.portfolio__item-image--natural img {
+  width: 100%;
+  height: auto;
   object-fit: contain;
   object-position: center;
 }
