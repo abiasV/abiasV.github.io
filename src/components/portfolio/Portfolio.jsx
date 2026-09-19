@@ -1,5 +1,4 @@
 import "./portfolio.css";
-import LIGHTHOUSE from "../../assets/lighthouse-real-hero.jpg";
 import CODELANCE from "../../assets/codelance-feature.png";
 import BLOGCMS from "../../assets/blogcms-thumb.svg";
 import EXPENSE from "../../assets/portfolio1.jpg";
@@ -8,7 +7,7 @@ import RICKMORTY from "../../assets/portfolio4.jpg";
 const data = [
   {
     id: 1,
-    image: LIGHTHOUSE,
+    image: "/lighthouse-portfolio-hero.jpg",
     title: "Lighthouse Agent",
     description:
       "A full-stack AI product for Etsy sellers that turns shop signals into prioritized growth actions with approval, verification, and outcome tracking.",
@@ -28,7 +27,7 @@ const data = [
   {
     id: 3,
     image: EXPENSE,
-    imageClass: "portfolio__item-image--contain",
+    imageClass: "portfolio__item-image--natural",
     title: "Expense Tracker — GraphQL",
     description:
       "A MERN expense tracker built with Apollo GraphQL, authentication, mutations, relational data, and deployment on Render.",
