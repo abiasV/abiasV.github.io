@@ -5,52 +5,30 @@ import { RiBookLine, RiServiceLine } from "react-icons/ri";
 import { BiMessageSquareDetail } from "react-icons/bi";
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState("#");
+  const [activeNav, setActiveNav] = useState("#home");
+
+  const items = [
+    ["#home", <AiOutlineHome />],
+    ["#about", <AiOutlineUser />],
+    ["#work", <RiBookLine />],
+    ["#portfolio", <AiOutlineProject />],
+    ["#skills", <RiServiceLine />],
+    ["#contact", <BiMessageSquareDetail />],
+  ];
+
   return (
     <nav>
-      <a
-        href="#home"
-        onClick={() => setActiveNav("#")}
-        className={activeNav === "#home" ? "active" : ""}
-      >
-        <AiOutlineHome />
-      </a>
-      <a
-        href="#about"
-        onClick={() => setActiveNav("#about")}
-        className={activeNav === "#about" ? "active" : ""}
-      >
-        <AiOutlineUser />
-      </a>
-      <a
-        href="#portfolio"
-        onClick={() => setActiveNav("#portfolio")}
-        className={activeNav === "#portfolio" ? "active" : ""}
-      >
-        <AiOutlineProject />
-      </a>
-      <a
-        href="#experience"
-        onClick={() => setActiveNav("#experience")}
-        className={activeNav === "#experience" ? "active" : ""}
-      >
-        <RiBookLine />
-      </a>
-      <a
-        href="#services"
-        onClick={() => setActiveNav("#services")}
-        className={activeNav === "#services" ? "active" : ""}
-      >
-        <RiServiceLine />
-      </a>
-      
-      <a
-        href="#contact"
-        onClick={() => setActiveNav("#contact")}
-        className={activeNav === "#contact" ? "active" : ""}
-      >
-        <BiMessageSquareDetail />
-      </a>
+      {items.map(([href, icon]) => (
+        <a
+          href={href}
+          key={href}
+          onClick={() => setActiveNav(href)}
+          className={activeNav === href ? "active" : ""}
+          aria-label={href.replace("#", "")}
+        >
+          {icon}
+        </a>
+      ))}
     </nav>
   );
 };

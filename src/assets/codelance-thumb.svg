@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101827"/>
+      <stop offset="100%" stop-color="#2b1b52"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="36" fill="url(#bg)"/>
+  <rect x="695" y="130" width="360" height="430" rx="26" fill="#161b22" stroke="#7c5cff" stroke-opacity=".8" stroke-width="3"/>
+  <rect x="735" y="182" width="280" height="58" rx="14" fill="#211f35"/>
+  <circle cx="772" cy="211" r="15" fill="#7c5cff"/>
+  <rect x="806" y="200" width="154" height="12" rx="6" fill="#5d5a7a"/>
+  <rect x="735" y="272" width="280" height="88" rx="16" fill="#211f35"/>
+  <rect x="760" y="294" width="126" height="12" rx="6" fill="#8d87b9"/>
+  <rect x="760" y="320" width="205" height="10" rx="5" fill="#524f70"/>
+  <rect x="735" y="388" width="280" height="118" rx="16" fill="#211f35"/>
+  <rect x="760" y="414" width="172" height="12" rx="6" fill="#8d87b9"/>
+  <rect x="760" y="444" width="205" height="10" rx="5" fill="#524f70"/>
+  <rect x="760" y="468" width="132" height="10" rx="5" fill="#524f70"/>
+  <text x="90" y="190" fill="#f5f3ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="76" font-weight="700">CodeLance</text>
+  <text x="93" y="254" fill="#a89cff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="31" font-weight="600">Full-Stack Freelancing Platform</text>
+  <text x="94" y="350" fill="#c9c5e6" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Admin • Employer • Freelancer</text>
+  <text x="94" y="400" fill="#c9c5e6" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">OTP Authentication • Proposals • Dashboards</text>
+  <text x="94" y="490" fill="#8e89aa" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="23">React • Node.js • MongoDB • React Query • Tailwind</text>
+</svg>

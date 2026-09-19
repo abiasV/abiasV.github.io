@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#121820"/>
+      <stop offset="100%" stop-color="#17322c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="36" fill="url(#bg)"/>
+  <rect x="705" y="120" width="355" height="470" rx="26" fill="#f4f7f5"/>
+  <rect x="705" y="120" width="355" height="68" rx="26" fill="#1f7a5c"/>
+  <circle cx="744" cy="154" r="9" fill="#d5efe5"/>
+  <rect x="770" y="145" width="108" height="18" rx="9" fill="#d5efe5" opacity=".85"/>
+  <rect x="746" y="226" width="270" height="44" rx="12" fill="#dce6e1"/>
+  <rect x="746" y="302" width="116" height="182" rx="14" fill="#e5ece8"/>
+  <rect x="886" y="302" width="130" height="18" rx="9" fill="#a7bbb1"/>
+  <rect x="886" y="342" width="105" height="14" rx="7" fill="#c5d2cc"/>
+  <rect x="886" y="378" width="130" height="14" rx="7" fill="#c5d2cc"/>
+  <rect x="886" y="414" width="88" height="14" rx="7" fill="#c5d2cc"/>
+  <rect x="886" y="462" width="100" height="34" rx="17" fill="#1f7a5c"/>
+  <text x="90" y="190" fill="#f0f6fc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="76" font-weight="700">Blog CMS</text>
+  <text x="92" y="255" fill="#63d6ac" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="31" font-weight="600">Role-Based Content Administration</text>
+  <text x="94" y="350" fill="#c9d1d9" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Create • Edit • Delete • Manage Users</text>
+  <text x="94" y="402" fill="#c9d1d9" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Authentication • Permissions • CRUD Workflows</text>
+  <text x="94" y="492" fill="#8b949e" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="23">PHP • MySQL • Admin/User Roles</text>
+</svg>

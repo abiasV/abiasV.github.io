@@ -1,96 +1,105 @@
 import "./portfolio.css";
-import IMG1 from "../../assets/portfolio1.jpg";
-import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
-import IMG4 from "../../assets/portfolio4.jpg";
-import IMG5 from "../../assets/portfolio5.jpg";
-import IMG6 from "../../assets/portfolio6.jpg";
+import CODELANCE from "../../assets/codelance-feature.png";
+import BLOGCMS from "../../assets/blogcms-thumb.svg";
+import EXPENSE from "../../assets/portfolio1.jpg";
+import RICKMORTY from "../../assets/portfolio4.jpg";
 
 const data = [
-	{
-		id: 1,
-		image: IMG1,
-		title: "MERN GraphQL Expense Tracker App",
-		github: "https://github.com/abiasV/Expense-graphql",
-		demo: "https://expense-graphql.onrender.com/",
-	},
-	{
-		id: 2,
-		image: IMG2,
-		title: "Assignment Tracking Application in ASP.net MVC, C#, JavaScript",
-		github: "https://github.com/abiasV/My-Passion-Project.git",
-		demo: "https://github.com/abiasV/My-Passion-Project.git",
-	},
-	{
-		id: 3,
-		image: IMG3,
-		title: "Travel Website CRUD APPlication in NodeJS, MongoDB, and Express",
-		github: "https://github.com/abiasV/Node.js-Express-app.git",
-		demo: "https://github.com/abiasV/Node.js-Express-app.git",
-	},
-	{
-		id: 4,
-		image: IMG4,
-		title: "The Rick and Morty API in ReactJs",
-		github: "https://github.com/abiasV/Rick-and-Morty.git",
-		demo: "https://github.com/abiasV/Rick-and-Morty.git",
-	},
-	{
-		id: 5,
-		image: IMG5,
-		title: "Egg-Cook Timer in JavaScript, CSS, HTML",
-		github: "https://github.com/abiasV/Cook-Timer.git",
-		demo: "https://github.com/abiasV/Cook-Timer.git",
-	},
-	{
-		id: 6,
-		image: IMG6,
-		title: "Taskify App in TypeScript",
-		github: "https://github.com/abiasV/TASKIFY-Typescript.git",
-		demo: "https://github.com/abiasV/TASKIFY-Typescript.git",
-	},
+  {
+    id: 1,
+    image: "/lighthouse-portfolio-hero.jpg",
+    title: "Lighthouse Agent",
+    description:
+      "A full-stack AI product for Etsy sellers that turns shop signals into prioritized growth actions with approval, verification, and outcome tracking.",
+    stack: ["React", "Node.js", "Express", "AI Workflows", "Etsy API"],
+    demo: "https://lighthouse-agent.netlify.app/",
+    featured: true,
+  },
+  {
+    id: 2,
+    image: CODELANCE,
+    title: "CodeLance — Full-Stack Freelancing Platform",
+    description:
+      "A MERN capstone with employer, freelancer, and admin roles, OTP authentication, proposals, dashboards, and role-based workflows.",
+    stack: ["React", "Node.js", "MongoDB", "React Query", "Tailwind"],
+    github: "https://github.com/abiasV/CodeLance",
+  },
+  {
+    id: 3,
+    image: EXPENSE,
+    imageClass: "portfolio__item-image--natural",
+    title: "Expense Tracker — GraphQL",
+    description:
+      "A MERN expense tracker built with Apollo GraphQL, authentication, mutations, relational data, and deployment on Render.",
+    stack: ["React", "Node.js", "MongoDB", "Apollo GraphQL"],
+    github: "https://github.com/abiasV/Expense-graphql",
+    demo: "https://expense-graphql.onrender.com/",
+  },
+  {
+    id: 4,
+    image: BLOGCMS,
+    title: "Blog CMS",
+    description:
+      "A role-based blog administration system for managing content, users, permissions, and CRUD workflows.",
+    stack: ["PHP", "MySQL", "Authentication", "CRUD"],
+    github: "https://github.com/abiasV/Blog-CMS",
+  },
+  {
+    id: 5,
+    image: RICKMORTY,
+    title: "Rick and Morty SPA",
+    description:
+      "A React single-page application focused on API integration, async data fetching, responsive UI, and reusable components.",
+    stack: ["React", "Vite", "REST API", "CSS"],
+    github: "https://github.com/abiasV/Rick-and-Morty",
+  },
 ];
 
 const Portfolio = () => {
-	return (
-		<section id="portfolio">
-			<h5>My Recent Work</h5>
-			<h2>Portfolio</h2>
+  return (
+    <section id="portfolio">
+      <h5>Selected work</h5>
+      <h2>Featured Projects</h2>
 
-			<div className="container portfolio__container">
-				{data.map(({ id, image, title, github, demo }) => {
-					return (
-						<article key={id} className="portfolio__item">
-							<div className="portfolio__item-image">
-								<img src={image} alt={title} />
-							</div>
-							<h3>{title}</h3>
-							<div className="portfolio__item-cta">
-								<a
-									href={github}
-									className="btn"
-									target="_blank"
-									rel="noreferrer"
-								>
-									Github
-								</a>
-								<a
-									href={demo}
-									className="btn btn-primary"
-									target="_blank"
-									rel="noreferrer"
-								>
-									Live Demo
-								</a>
-							</div>
-						</article>
-					);
-				})}
+      <div className="container portfolio__container">
+        {data.map(({ id, image, imageClass = "", title, description, stack, github, demo, featured }) => (
+          <article
+            key={id}
+            className={`portfolio__item ${featured ? "portfolio__item--featured" : ""}`}
+          >
+            <div className={`portfolio__item-image ${imageClass}`}>
+              <img src={image} alt={title} />
+            </div>
 
-				{/* END OF IMAGE1 */}
-			</div>
-		</section>
-	);
+            <div className="portfolio__body">
+              {featured && <span className="portfolio__featured-label">Current Product</span>}
+              <h3>{title}</h3>
+              <p>{description}</p>
+
+              <div className="portfolio__stack">
+                {stack.map((item) => (
+                  <span key={item}>{item}</span>
+                ))}
+              </div>
+
+              <div className="portfolio__item-cta">
+                {github && (
+                  <a href={github} className="btn" target="_blank" rel="noreferrer">
+                    GitHub
+                  </a>
+                )}
+                {demo && (
+                  <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer">
+                    Live Project
+                  </a>
+                )}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
 };
 
 export default Portfolio;
