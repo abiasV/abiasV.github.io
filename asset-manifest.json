@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.690b58d5.css",
+    "main.js": "/static/js/main.b9245a63.js",
+    "static/media/About-me.jpg": "/static/media/About-me.bd7a5c1fd40caeb2c21c.jpg",
+    "static/media/Profile.jpeg": "/static/media/Profile.1eb10c11a12e78dd2d80.jpeg",
+    "static/media/portfolio4.jpg": "/static/media/portfolio4.00dbc077895069c87dd3.jpg",
+    "static/media/codelance-feature.png": "/static/media/codelance-feature.564cc85494fa14591e2c.png",
+    "static/media/AbbasVaziri-Resume.pdf": "/static/media/AbbasVaziri-Resume.00b7c37aab47827c90ae.pdf",
+    "static/media/portfolio1.jpg": "/static/media/portfolio1.8f8b24bf9203feae5bb0.jpg",
+    "static/media/blogcms-thumb.svg": "/static/media/blogcms-thumb.d859edee2138b6440a19c278973568b5.svg",
+    "index.html": "/index.html",
+    "main.690b58d5.css.map": "/static/css/main.690b58d5.css.map",
+    "main.b9245a63.js.map": "/static/js/main.b9245a63.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.690b58d5.css",
+    "static/js/main.b9245a63.js"
+  ]
+}
